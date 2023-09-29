@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sushi_app_design/components/button.dart';
 import 'package:sushi_app_design/theme/colors.dart';
+import 'package:lottie/lottie.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
@@ -26,6 +27,11 @@ class IntroPage extends StatelessWidget {
             ),
             const SizedBox(
               height: 25,
+            ),
+            Lottie.asset(
+              'assets/sushi_animate.json',
+              width: 300,
+              height: 300,
             ),
             Padding(
               padding: const EdgeInsets.all(50.0),
